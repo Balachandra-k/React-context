@@ -4,10 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//import bootstrap css and js fils
+
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle"
+
+import "bootstrap-icons/font/bootstrap-icons.css"
+import Dataprovider, { DataContext } from './context/Dataprovider';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Dataprovider>
+    <App />{/* children */}
+    </Dataprovider>
   </React.StrictMode>
 );
 
